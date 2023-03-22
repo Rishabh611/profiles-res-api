@@ -8,7 +8,7 @@ router.register(
     "profile",
     views.ProfileViewset,
 )
-
+router.register("feed", views.UserProfileFeedViewSet)
 urlpatterns = [
     path("hello-view/", views.HelloAPIView.as_view()),
     path("login/", views.UserLoginAPIView.as_view()),
